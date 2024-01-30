@@ -1,0 +1,20 @@
+{
+    "wgsl_highlighted_string": {
+        "prefix": "wgsl",
+        "body": [
+            "\"\"\"//wgsl",
+            "",
+            "\"\"\""
+        ],
+        "description": "WGSL highlighted string"
+    },
+    "glsl_highlighted_string": {
+        "prefix": "glsl",
+        "body": [
+            "\"\"\"//glsl",
+            "",
+            "\"\"\""
+        ],
+        "description": "GLSL highlighted string"
+    }
+}

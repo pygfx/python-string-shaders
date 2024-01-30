@@ -1,0 +1,46 @@
+{
+  "name": "python-string-shaders",
+  "displayName": "python-string-shaders",
+  "description": "Syntax highlighting for shaders in Python multiline strings",
+  "version": "0.0.1",
+  "publisher": "almarklein",
+  "repository": {
+    "url": "https://github.com/pygfx/python-string-shaders"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/highlight-wgsl-string.json",
+        "scopeName": "python-wgsl.injection",
+        "injectTo": [
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.wgsl": "wgsl"
+        }
+      },
+      {
+        "path": "./syntaxes/highlight-glsl-string.json",
+        "scopeName": "python-glsl.injection",
+        "injectTo": [
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.glsl": "glsl"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/python.json"
+      }
+    ]
+  }
+}
