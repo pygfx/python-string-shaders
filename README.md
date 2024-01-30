@@ -1,6 +1,6 @@
 # python-embedded-shader
 
-Adds syntax highlight support for python multiline shader strings in VS Code.
+Adds syntax highlight support for shaders in python multiline strings in VS Code.
 
 Supported shader languages:
 * wgsl
