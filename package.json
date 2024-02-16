@@ -23,23 +23,16 @@
   "contributes": {
     "grammars": [
       {
-        "path": "./syntaxes/highlight-wgsl-string.json",
-        "scopeName": "python-wgsl.injection",
+        "scopeName": "source.python.embedded.codeblock",
         "injectTo": [
           "source.python"
         ],
+        "path": "syntaxes/python.embedded.json",
         "embeddedLanguages": {
-          "meta.embedded.wgsl": "wgsl"
-        }
-      },
-      {
-        "path": "./syntaxes/highlight-glsl-string.json",
-        "scopeName": "python-glsl.injection",
-        "injectTo": [
-          "source.python"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.glsl": "glsl"
+          "meta.embedded.block.wgsl.python": "wgsl",
+          "meta.embedded.block.glsl.python": "glsl",
+          "meta.embedded.block.hlsl.python": "hlsl",
+          "meta.embedded.block.metal.python": "metal"
         }
       }
     ],
