@@ -2,11 +2,26 @@
 
 Adds syntax highlight support for shaders in python multiline strings in VS Code.
 
-Supported shader languages:
+## Features
+
+### Supported shader languages
+
 * wgsl
 * glsl
+* hlsl
+* metal
 
-Also provides snippets to create an embedded shader string, so you don't have to remember the syntax.
+### Snippets
+
+Provides snippets to create an embedded shader string, so you don't have to remember the syntax.
+
+### Jinja templating
+
+Jinja templates are syntax-highlighted. The tokens are rendered as keywords, and the content 
+as string (shaders don't have/use string).
+
+Unfortunately, this does *not* work for shaders embedded in Python strings. If you know how to
+fix that I'd love to learn.
 
 ## Example
 
@@ -26,7 +41,3 @@ shader = """//wgsl
 * You need to install syntax highlighting support for the shader languages separately. 
 * This only provides syntax highlighting, no autocompletion or linting of your shaders.
 
-
-## Status
-
-Experimental.
