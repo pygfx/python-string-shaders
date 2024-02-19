@@ -1,0 +1,54 @@
+{
+    "scopeName": "jinjatemplate.injection",
+    "injectionSelector": "L:source.wgsl, L:source.glsl, L:source.hlsl, L:source.metal",
+    "patterns": [
+        {
+            "include": "#jinja-template"
+        }
+    ],
+    "repository": {
+        "jinja-template": {
+            "patterns": [
+                {
+                    "comment": "double-dollar line_statement_prefix",
+                    "match": "^\\s*(\\$\\$)(.*)$",
+                    "name": "string",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.other"
+                        }
+                    }
+                },
+                {
+                    "comment": "double-brace variable_start_string / variable_end_string",
+                    "match": "({{)(.*)(}})",
+                    "name": "string",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.other"
+                        },
+                        "3": {
+                            "name": "keyword.other"
+                        }
+                    }
+                },
+                {
+                    "comment": "brace-percent block_start_string / block_end_string",
+                    "begin": "{%",
+                    "end": "%}",
+                    "name": "string",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "keyword.other"
+                        }
+                    },
+                    "endCaptures": {
+                        "0": {
+                            "name": "keyword.other"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

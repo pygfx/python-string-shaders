@@ -12,9 +12,9 @@
 				{
 					"comment": "WGSL-formatted triple-quoted strings",
 					"name": "string.quoted.multi.embedded.python",
+					"contentName": "meta.embedded.block.wgsl.python source.wgsl",
 					"begin": "(?x)\n( (?i:u|r|f|rf|fr|) )\n('''|\"\"\")\n(?= (?i://wgsl) \\b )",
 					"end": "(\\2)",
-					"contentName": "meta.embedded.block.wgsl.python source.wgsl",
 					"patterns": [
 						{
 							"include": "source.wgsl"
@@ -37,9 +37,9 @@
 				{
 					"comment": "GLSL-formatted triple-quoted strings",
 					"name": "string.quoted.multi.embedded.python",
+					"contentName": "meta.embedded.block.glsl.python source.glsl",
 					"begin": "(?x)\n( (?i:u|r|f|rf|fr|) )\n('''|\"\"\")\n(?= (?i://glsl) \\b )",
 					"end": "(\\2)",
-					"contentName": "meta.embedded.block.glsl.python source.glsl",
 					"patterns": [
 						{
 							"include": "source.glsl"
@@ -62,9 +62,9 @@
 				{
 					"comment": "HLSL-formatted triple-quoted strings",
 					"name": "string.quoted.multi.embedded.python",
+					"contentName": "meta.embedded.block.hlsl.python source.hlsl",
 					"begin": "(?x)\n( (?i:u|r|f|rf|fr|) )\n('''|\"\"\")\n(?= (?i://hlsl) \\b )",
 					"end": "(\\2)",
-					"contentName": "meta.embedded.block.hlsl.python source.hlsl",
 					"patterns": [
 						{
 							"include": "source.hlsl"
@@ -87,9 +87,9 @@
 				{
 					"comment": "Metal-formatted triple-quoted strings",
 					"name": "string.quoted.multi.embedded.python",
+					"contentName": "meta.embedded.block.metal.python source.metal",
 					"begin": "(?x)\n( (?i:u|r|f|rf|fr|) )\n('''|\"\"\")\n(?= (?i://metal) \\b )",
 					"end": "(\\2)",
-					"contentName": "meta.embedded.block.metal.python source.metal",
 					"patterns": [
 						{
 							"include": "source.metal"

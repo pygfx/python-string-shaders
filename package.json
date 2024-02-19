@@ -23,17 +23,27 @@
   "contributes": {
     "grammars": [
       {
+        "path": "syntaxes/python.embedded.json",
         "scopeName": "source.python.embedded.codeblock",
         "injectTo": [
           "source.python"
         ],
-        "path": "syntaxes/python.embedded.json",
         "embeddedLanguages": {
           "meta.embedded.block.wgsl.python": "wgsl",
           "meta.embedded.block.glsl.python": "glsl",
           "meta.embedded.block.hlsl.python": "hlsl",
           "meta.embedded.block.metal.python": "metal"
         }
+      },
+      {
+        "path": "syntaxes/shader.jinja.json",
+        "scopeName": "jinjatemplate.injection",
+        "injectTo": [
+          "source.wgsl",
+          "source.glsl",
+          "source.hlsl",
+          "source.metal"
+        ]
       }
     ],
     "snippets": [
