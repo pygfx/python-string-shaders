@@ -33,6 +33,38 @@
                     }
                 },
                 {
+                    "comment": "brace-hash comment",
+                    "begin": "{\\#",
+                    "end": "\\#}",
+                    "name": "comment",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "keyword.other"
+                        }
+                    },
+                    "endCaptures": {
+                        "0": {
+                            "name": "keyword.other"
+                        }
+                    }
+                },
+                {
+                    "comment": "brace-dollar block_start_string / block_end_string",
+                    "begin": "{\\$",
+                    "end": "\\$}",
+                    "name": "string",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "keyword.other"
+                        }
+                    },
+                    "endCaptures": {
+                        "0": {
+                            "name": "keyword.other"
+                        }
+                    }
+                },
+                {
                     "comment": "brace-percent block_start_string / block_end_string",
                     "begin": "{%",
                     "end": "%}",

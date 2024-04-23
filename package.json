@@ -1,56 +1,56 @@
 {
-  "name": "python-string-shaders",
-  "displayName": "python-string-shaders",
-  "description": "Shader syntax highlighting in Python multiline strings",
-  "version": "0.1.2",
-  "publisher": "almarklein",
-  "repository": {
-    "url": "https://github.com/pygfx/python-string-shaders"
-  },
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "keywords": [
-    "wgsl",
-    "glsl",
-    "shaders",
-    "gpu",
-    "python"
-  ],
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "grammars": [
-      {
-        "path": "syntaxes/python.embedded.json",
-        "scopeName": "source.python.embedded.codeblock",
-        "injectTo": [
-          "source.python"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.block.wgsl.python": "wgsl",
-          "meta.embedded.block.glsl.python": "glsl",
-          "meta.embedded.block.hlsl.python": "hlsl",
-          "meta.embedded.block.metal.python": "metal"
-        }
-      },
-      {
-        "path": "syntaxes/shader.jinja.json",
-        "scopeName": "jinjatemplate.injection",
-        "injectTo": [
-          "source.wgsl",
-          "source.glsl",
-          "source.hlsl",
-          "source.metal"
-        ]
-      }
-    ],
-    "snippets": [
-      {
-        "language": "python",
-        "path": "./snippets/python.json"
-      }
-    ]
-  }
+	"name": "python-string-shaders",
+	"displayName": "python-string-shaders",
+	"description": "Shader syntax highlighting in Python multiline strings",
+	"version": "0.1.3",
+	"publisher": "almarklein",
+	"repository": {
+		"url": "https://github.com/pygfx/python-string-shaders"
+	},
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"keywords": [
+		"wgsl",
+		"glsl",
+		"shaders",
+		"gpu",
+		"python"
+	],
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"path": "syntaxes/python.embedded.json",
+				"scopeName": "source.python.embedded.codeblock",
+				"injectTo": [
+					"source.python"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.block.wgsl.python": "wgsl",
+					"meta.embedded.block.glsl.python": "glsl",
+					"meta.embedded.block.hlsl.python": "hlsl",
+					"meta.embedded.block.metal.python": "metal"
+				}
+			},
+			{
+				"path": "syntaxes/shader.jinja.json",
+				"scopeName": "jinjatemplate.injection",
+				"injectTo": [
+					"source.wgsl",
+					"source.glsl",
+					"source.hlsl",
+					"source.metal"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "python",
+				"path": "./snippets/python.json"
+			}
+		]
+	}
 }

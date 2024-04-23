@@ -5,6 +5,12 @@ All notable changes to the "python-embedded-shaders" extension will be documente
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+## [0.1.3]
+
+- Added support for templating with `{$ .. $}`.
+- Added support for template comment blocks `{# .. #}`
+
+
 ## [0.1.2]
 
 - Fix that the shader code did not end when the string ended.
